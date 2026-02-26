@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élevage du Bernilapin - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Merriweather', serif; }
+        .lang-transition { transition: opacity 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-[#EDE4C2] text-[#254F22] antialiased selection:bg-[#F5824A] selection:text-white">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-[#EDE4C2]/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="text-2xl font-serif font-bold flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo Bernilapin" class="h-10 w-auto object-contain">
+                <span class="lang-transition" data-fr="Élevage du Bernilapin" data-en="Bernilapin Farm">Élevage du Bernilapin</span>
+            </a>
+            
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="index.html" class="text-[#A03A13] font-bold transition-colors lang-transition" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="valeurs.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                <li><a href="produits.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Produits" data-en="Products">Produits</a></li>
+                <li><a href="contact.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+
+            <button id="lang-toggle" class="flex items-center gap-2 bg-[#254F22] text-[#EDE4C2] px-4 py-2 rounded-lg hover:bg-[#A03A13] transition-all shadow-md hover:shadow-lg">
+                <i data-lucide="globe" class="w-4 h-4"></i>
+                <span id="lang-text" class="font-bold">EN</span>
+            </button>
+        </nav>
+    </header>
+
+<!-- Hero Section Produits -->
+<section class="relative h-[50vh] flex items-center justify-center overflow-hidden bg-[#254F22]">
+    <img src="assets/lapin2.jpg" alt="Viande de lapin" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay">
+    <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl font-serif font-bold mb-4 text-[#EDE4C2] lang-transition" data-fr="Nos Produits" data-en="Our Products">Nos Produits</h1>
+        <p class="text-xl text-[#EDE4C2]/80 lang-transition" data-fr="De la ferme à votre table, une qualité irréprochable." data-en="From farm to table, flawless quality.">De la ferme à votre table, une qualité irréprochable.</p>
+    </div>
+</section>
+
+<main class="py-24 container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Produit 1 : Lapin Entier -->
+        <div class="bg-white/40 rounded-xl overflow-hidden shadow-md border border-[#254F22]/10 hover:shadow-lg transition-shadow">
+            <div class="h-48 bg-[#254F22]/10 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lapin Entier" class="w-full h-full object-cover opacity-80">
+            </div>
+            <div class="p-6">
+                <h3 class="text-2xl font-serif font-bold mb-2 text-[#A03A13] lang-transition" data-fr="Lapin Entier" data-en="Whole Rabbit">Lapin Entier</h3>
+                <p class="text-[#254F22]/80 lang-transition" data-fr="Prêt à cuire, idéal pour les repas de famille traditionnels." data-en="Ready to cook, ideal for traditional family meals.">Prêt à cuire, idéal pour les repas de famille traditionnels.</p>
+            </div>
+        </div>
+        <!-- Produit 2 : Râbles -->
+        <div class="bg-white/40 rounded-xl overflow-hidden shadow-md border border-[#254F22]/10 hover:shadow-lg transition-shadow">
+            <div class="h-48 bg-[#254F22]/10 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Râbles de lapin" class="w-full h-full object-cover opacity-80">
+            </div>
+            <div class="p-6">
+                <h3 class="text-2xl font-serif font-bold mb-2 text-[#A03A13] lang-transition" data-fr="Râbles" data-en="Rabbit Saddles">Râbles</h3>
+                <p class="text-[#254F22]/80 lang-transition" data-fr="Le morceau de choix, charnu et délicat, parfait à rôtir." data-en="The premium cut, meaty and delicate, perfect for roasting.">Le morceau de choix, charnu et délicat, parfait à rôtir.</p>
+            </div>
+        </div>
+        <!-- Produit 3 : Cuisses -->
+        <div class="bg-white/40 rounded-xl overflow-hidden shadow-md border border-[#254F22]/10 hover:shadow-lg transition-shadow">
+            <div class="h-48 bg-[#254F22]/10 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cuisses de lapin" class="w-full h-full object-cover opacity-80">
+            </div>
+            <div class="p-6">
+                <h3 class="text-2xl font-serif font-bold mb-2 text-[#A03A13] lang-transition" data-fr="Cuisses" data-en="Rabbit Legs">Cuisses</h3>
+                <p class="text-[#254F22]/80 lang-transition" data-fr="Tendres et savoureuses, excellentes pour les plats en sauce." data-en="Tender and flavorful, excellent for dishes with sauce.">Tendres et savoureuses, excellentes pour les plats en sauce.</p>
+            </div>
+        </div>
+        <!-- Produit 4 : Foies -->
+        <div class="bg-white/40 rounded-xl overflow-hidden shadow-md border border-[#254F22]/10 hover:shadow-lg transition-shadow">
+            <div class="h-48 bg-[#254F22]/10 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1627308595229-7830f5c9200e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Foies de lapin" class="w-full h-full object-cover opacity-80">
+            </div>
+            <div class="p-6">
+                <h3 class="text-2xl font-serif font-bold mb-2 text-[#A03A13] lang-transition" data-fr="Foies" data-en="Rabbit Livers">Foies</h3>
+                <p class="text-[#254F22]/80 lang-transition" data-fr="Une texture fondante, idéale pour vos salades tièdes ou terrines." data-en="A melting texture, ideal for warm salads or terrines.">Une texture fondante, idéale pour vos salades tièdes ou terrines.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A3818] text-[#EDE4C2]/60 py-8 mt-auto">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="lang-transition" data-fr="&copy; 2026 Élevage du Bernilapin. Tous droits réservés." data-en="&copy; 2026 Bernilapin Farm. All rights reserved.">&copy; 2026 Élevage du Bernilapin. Tous droits réservés.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/people/%C3%89levage-du-Bernilapin/61574942113012/" target="_blank" rel="noopener noreferrer" class="hover:text-[#F5824A] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-[#F5824A] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langTextSpan = document.getElementById('lang-text');
+        
+        // Vérifier le localStorage pour garder la langue entre les pages
+        let currentLang = localStorage.getItem('bernilapin_lang') || 'fr';
+        
+        function applyLanguage(lang) {
+            langTextSpan.textContent = lang === 'fr' ? 'EN' : 'FR';
+            document.documentElement.lang = lang;
+            const translatableElements = document.querySelectorAll('[data-fr][data-en]');
+            
+            translatableElements.forEach(el => {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                    el.innerHTML = el.getAttribute(`data-${lang}`);
+                    el.style.opacity = 1;
+                }, 300);
+            });
+        }
+
+        // Appliquer la langue au chargement
+        applyLanguage(currentLang);
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('bernilapin_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+    </script>
+</body>
+</html>

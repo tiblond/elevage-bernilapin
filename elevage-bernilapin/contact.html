@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élevage du Bernilapin - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Merriweather', serif; }
+        .lang-transition { transition: opacity 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-[#EDE4C2] text-[#254F22] antialiased selection:bg-[#F5824A] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-[#EDE4C2]/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="text-2xl font-serif font-bold flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo Bernilapin" class="h-10 w-auto object-contain">
+                <span class="lang-transition" data-fr="Élevage du Bernilapin" data-en="Bernilapin Farm">Élevage du Bernilapin</span>
+            </a>
+            
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="index.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="valeurs.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                <li><a href="produits.html" class="hover:text-[#A03A13] transition-colors lang-transition" data-fr="Produits" data-en="Products">Produits</a></li>
+                <li><a href="contact.html" class="text-[#A03A13] font-bold transition-colors lang-transition" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+
+            <button id="lang-toggle" class="flex items-center gap-2 bg-[#254F22] text-[#EDE4C2] px-4 py-2 rounded-lg hover:bg-[#A03A13] transition-all shadow-md hover:shadow-lg">
+                <i data-lucide="globe" class="w-4 h-4"></i>
+                <span id="lang-text" class="font-bold">EN</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section Contact -->
+    <section class="relative py-16 bg-[#254F22] text-center">
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl font-serif font-bold mb-4 text-[#EDE4C2] lang-transition" data-fr="Contactez-nous" data-en="Contact Us">Contactez-nous</h1>
+            <div class="w-24 h-1 bg-[#F5824A] mx-auto rounded-full mb-6"></div>
+            <p class="text-xl text-[#EDE4C2]/90 max-w-2xl mx-auto font-medium lang-transition" 
+               data-fr="Privilégier le circuit court et la vente directe, c'est garantir la fraîcheur de nos produits tout en soutenant une agriculture locale et responsable." 
+               data-en="Choosing short supply chains and direct sales means guaranteeing the freshness of our products while supporting local and responsible agriculture.">
+                Privilégier le circuit court et la vente directe, c'est garantir la fraîcheur de nos produits tout en soutenant une agriculture locale et responsable.
+            </p>
+            <p class="text-lg text-[#F5824A] max-w-2xl mx-auto font-bold mt-6 lang-transition" 
+               data-fr="Contactez-nous pour réserver vos produits ou visiter l'élevage." 
+               data-en="Contact us to reserve your products or visit the farm.">
+                Contactez-nous pour réserver vos produits ou visiter l'élevage.
+            </p>
+        </div>
+    </section>
+
+    <main class="flex-grow py-20 container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            
+            <!-- Bloc Téléphone -->
+            <a href="tel:+14182343877" class="block bg-white/50 p-8 rounded-2xl shadow-sm border border-[#A03A13]/30 text-center hover:scale-105 hover:border-[#F5824A] hover:shadow-md transition-all duration-300 group">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#254F22]/10 text-[#F5824A] mb-6 group-hover:bg-[#F5824A] group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="phone" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-serif font-bold mb-4 text-[#254F22] lang-transition" data-fr="Téléphone" data-en="Phone">Téléphone</h3>
+                <p class="text-lg font-bold text-[#A03A13] group-hover:text-[#F5824A] transition-colors duration-300">(418) 234-3877</p>
+                <p class="text-sm text-[#254F22]/80 mt-2 lang-transition" data-fr="Pour vos commandes et réservations." data-en="For your orders and reservations.">Pour vos commandes et réservations.</p>
+            </a>
+
+            <!-- Bloc Instagram -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="block bg-white/50 p-8 rounded-2xl shadow-sm border border-[#A03A13]/30 text-center hover:scale-105 hover:border-[#F5824A] hover:shadow-md transition-all duration-300 group">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#254F22]/10 text-[#F5824A] mb-6 group-hover:bg-[#F5824A] group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="instagram" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-serif font-bold mb-4 text-[#254F22]">Instagram</h3>
+                <p class="text-lg font-bold text-[#A03A13] group-hover:text-[#F5824A] transition-colors duration-300">@bernilapin</p>
+                <p class="text-sm text-[#254F22]/80 mt-2 lang-transition" data-fr="Suivez notre quotidien à la ferme." data-en="Follow our daily life on the farm.">Suivez notre quotidien à la ferme.</p>
+            </a>
+
+            <!-- Bloc Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61574942113012" target="_blank" rel="noopener noreferrer" class="block bg-white/50 p-8 rounded-2xl shadow-sm border border-[#A03A13]/30 text-center hover:scale-105 hover:border-[#F5824A] hover:shadow-md transition-all duration-300 group">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#254F22]/10 text-[#F5824A] mb-6 group-hover:bg-[#F5824A] group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="facebook" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-serif font-bold mb-4 text-[#254F22]">Facebook</h3>
+                <p class="text-lg font-bold text-[#A03A13] group-hover:text-[#F5824A] transition-colors duration-300 lang-transition" data-fr="Élevage du Bernilapin" data-en="Bernilapin Farm">Élevage du Bernilapin</p>
+                <p class="text-sm text-[#254F22]/80 mt-2 lang-transition" data-fr="Rejoignez notre communauté." data-en="Join our community.">Rejoignez notre communauté.</p>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A3818] text-[#EDE4C2]/60 py-8 mt-auto">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="lang-transition" data-fr="&copy; 2026 Élevage du Bernilapin. Tous droits réservés." data-en="&copy; 2026 Bernilapin Farm. All rights reserved.">&copy; 2026 Élevage du Bernilapin. Tous droits réservés.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/people/%C3%89levage-du-Bernilapin/61574942113012/" target="_blank" rel="noopener noreferrer" class="hover:text-[#F5824A] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-[#F5824A] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langTextSpan = document.getElementById('lang-text');
+        
+        let currentLang = localStorage.getItem('bernilapin_lang') || 'fr';
+        
+        function applyLanguage(lang) {
+            langTextSpan.textContent = lang === 'fr' ? 'EN' : 'FR';
+            document.documentElement.lang = lang;
+            const translatableElements = document.querySelectorAll('[data-fr][data-en]');
+            
+            translatableElements.forEach(el => {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                    el.innerHTML = el.getAttribute(`data-${lang}`);
+                    el.style.opacity = 1;
+                }, 300);
+            });
+        }
+
+        applyLanguage(currentLang);
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('bernilapin_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+    </script>
+</body>
+</html>
