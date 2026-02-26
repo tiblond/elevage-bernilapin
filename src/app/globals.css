@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Configuration du thème via le fichier tailwind.config.js
+   (palette de couleurs terreuses : verts, beige, bois, terre)
+   ============================================================ */
+@config "../../tailwind.config.js";
+
+/* ============================================================
+   Variables CSS globales
+   Modifier --color-background et --color-foreground pour
+   changer les couleurs de fond et de texte par défaut.
+   ============================================================ */
+:root {
+  --background: #FAF7F2; /* beige crème très clair */
+  --foreground: #4A2E1B; /* terre foncé pour le texte */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ============================================================
+   Utilitaires globaux
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+}
